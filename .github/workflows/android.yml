@@ -21,4 +21,7 @@ jobs:
          java-version: '11'
 
       - name: gradle cache
-        u
+        uses: actions/cache@v1
+        with:
+          path: ~/.gradle/caches
+          key: 
