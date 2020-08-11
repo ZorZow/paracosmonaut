@@ -35,4 +35,10 @@ jobs:
           key: ${{ runner.os }}-gradlewrapper
 
       - name: Detekt
-       
+        run: ./gradlew detekt
+
+      - name: Markdown lint
+        run: ./gradlew markdownlint
+
+  lint:
+  
