@@ -41,4 +41,7 @@ jobs:
         run: ./gradlew markdownlint
 
   lint:
-  
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: a
