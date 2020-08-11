@@ -31,4 +31,8 @@ jobs:
       - name: gradle wrapper cache
         uses: actions/cache@v1
         with:
-          path: ~
+          path: ~/.gradle/wrapper/dists
+          key: ${{ runner.os }}-gradlewrapper
+
+      - name: Detekt
+       
