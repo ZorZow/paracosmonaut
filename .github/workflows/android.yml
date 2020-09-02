@@ -75,4 +75,8 @@ jobs:
           distribution: 'zulu'
           java-version: '11'
 
-      - name: gradle 
+      - name: gradle cache
+        uses: actions/cache@v1
+        with:
+          path: ~/.gradle/caches
+          key: ${
