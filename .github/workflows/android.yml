@@ -83,4 +83,7 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-gradle-
 
-      - name: gradle wrapper cac
+      - name: gradle wrapper cache
+        uses: actions/cache@v1
+        with:
+          path: ~/.gradl
