@@ -79,4 +79,5 @@ jobs:
         uses: actions/cache@v1
         with:
           path: ~/.gradle/caches
-          key: ${
+          key: ${{ runner.os }}-gradle-${{ hashFiles('**/*.gradle*') }}
+          restor
