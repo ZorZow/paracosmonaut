@@ -61,4 +61,10 @@ jobs:
         uses: actions/cache@v1
         with:
           path: ~/.gradle/wrapper/dists
-          key: ${{ runner.os
+          key: ${{ runner.os }}-gradlewrapper
+
+      - name: Lint
+        run: ./gradlew lint
+
+  unit-tests:
+    runs-on: ubuntu-late
