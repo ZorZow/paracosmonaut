@@ -90,4 +90,7 @@ jobs:
           key: ${{ runner.os }}-gradlewrapper
 
       - name: konan cache
-       
+        uses: actions/cache@v1
+        with:
+          path: ~/.konan
+          key: ${{ runner.os }}-kona
