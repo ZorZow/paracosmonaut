@@ -93,4 +93,9 @@ jobs:
         uses: actions/cache@v1
         with:
           path: ~/.konan
-          key: ${{ runner.os }}-kona
+          key: ${{ runner.os }}-konan
+
+      - name: Unit tests
+        run: ./gradlew check -xlint
+
+      - name: Upload tes
