@@ -98,4 +98,8 @@ jobs:
       - name: Unit tests
         run: ./gradlew check -xlint
 
-      - name: Upload tes
+      - name: Upload test artifacts
+        if: failure()
+        uses: actions/upload-artifact@master
+        with:
+          n
