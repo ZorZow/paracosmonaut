@@ -102,4 +102,8 @@ jobs:
         if: failure()
         uses: actions/upload-artifact@master
         with:
-          n
+          name: test-results
+          path: '**/build/reports/tests/**'
+
+  build:
+    needs: [ sta
