@@ -1,0 +1,16 @@
+
+name: "Validate Gradle Wrapper"
+
+on:
+  push:
+    branches:
+      - main
+      - orbit/main
+      - feature/**
+    tags:
+      - '*'
+  pull_request:
+    branches:
+      - main
+      - orbit/main
+      - feature/**

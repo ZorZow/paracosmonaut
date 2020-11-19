@@ -133,4 +133,7 @@ jobs:
         uses: actions/cache@v1
         with:
           path: ~/.konan
-          key: ${{ runner.os }}-kona
+          key: ${{ runner.os }}-konan
+
+      - name: Build
+        run: ./gradlew clean assemble -xassembleDebug
