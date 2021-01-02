@@ -6,4 +6,5 @@ This sample implements a stock list using [Orbit MVI](https://github.com/orbit-m
   in [StockListApplication](app/src/main/kotlin/org/orbitmvi/orbit/sample/stocklist/StockListApplication.kt).
 
 - Streaming data is provided by [Lightstreamer](https://lightstreamer.com) and
-  thei
+  their demo server with callback interfaces converted to Kotlin Flow's with
+  [callbackFlow](https://kotl
