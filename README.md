@@ -10,4 +10,5 @@ This sample implements a stock list using [Orbit MVI](https://github.com/orbit-m
   [callbackFlow](https://kotlin.github.io/kotlinx.coroutines/kotlinx-coroutines-core/kotlinx.coroutines.flow/callback-flow.html).
 
 - Navigation between the stock list and the detail view uses Jetpack's [Navigation](https://developer.android.com/jetpack/compose/navigation).
-  [ListViewModel](app/
+  [ListViewModel](app/src/main/kotlin/org/orbitmvi/orbit/sample/stocklist/list/business/ListViewModel.kt)
+  posts a sid
