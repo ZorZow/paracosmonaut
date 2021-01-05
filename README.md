@@ -9,4 +9,5 @@ This sample implements a stock list using [Orbit MVI](https://github.com/orbit-m
   their demo server with callback interfaces converted to Kotlin Flow's with
   [callbackFlow](https://kotlin.github.io/kotlinx.coroutines/kotlinx-coroutines-core/kotlinx.coroutines.flow/callback-flow.html).
 
-- Navigation between the stock list and the detail view uses Jetpack's [
+- Navigation between the stock list and the detail view uses Jetpack's [Navigation](https://developer.android.com/jetpack/compose/navigation).
+  [ListViewModel](app/
