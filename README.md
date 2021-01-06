@@ -11,4 +11,5 @@ This sample implements a stock list using [Orbit MVI](https://github.com/orbit-m
 
 - Navigation between the stock list and the detail view uses Jetpack's [Navigation](https://developer.android.com/jetpack/compose/navigation).
   [ListViewModel](app/src/main/kotlin/org/orbitmvi/orbit/sample/stocklist/list/business/ListViewModel.kt)
-  posts a sid
+  posts a side effect which [ListScreen](app/src/main/kotlin/org/orbitmvi/orbit/sample/stocklist/list/ui/ListScreen.kt)
+  observes and send
