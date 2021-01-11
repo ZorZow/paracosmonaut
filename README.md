@@ -14,4 +14,5 @@ This sample implements a stock list using [Orbit MVI](https://github.com/orbit-m
   posts a side effect which [ListScreen](app/src/main/kotlin/org/orbitmvi/orbit/sample/stocklist/list/ui/ListScreen.kt)
   observes and sends to the `NavController`.
 
-- [Jetpack Compose](https://developer.android.com/jetpack/compose
+- [Jetpack Compose](https://developer.android.com/jetpack/compose)
+  is used to render layouts throughout.
