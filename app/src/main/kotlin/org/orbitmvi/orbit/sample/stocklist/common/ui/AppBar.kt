@@ -27,4 +27,7 @@ import androidx.compose.material.icons.filled.ArrowBack
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
-import org.orbitmvi.orbit.sa
+import org.orbitmvi.orbit.sample.stocklist.R
+
+@Composable
+fun AppBar(topAppBarText: String, onBackPressed: ((
