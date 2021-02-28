@@ -47,4 +47,6 @@ fun AppBar(topAppBarText: String, onBackPressed: (() -> Unit)? = null) {
             {
                 IconButton(onClick = onBackPressed) {
                     Icon(
-                      
+                        Icons.Filled.ArrowBack,
+                        contentDescription = "Back"
+              
