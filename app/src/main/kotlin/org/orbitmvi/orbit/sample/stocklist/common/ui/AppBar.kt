@@ -39,4 +39,9 @@ fun AppBar(topAppBarText: String, onBackPressed: (() -> Unit)? = null) {
                     contentDescription = null
                 )
                 Text(
-                    text = topAppBarTe
+                    text = topAppBarText
+                )
+            }
+        },
+        navigationIcon = onBackPressed?.let {
+            
