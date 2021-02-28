@@ -35,4 +35,5 @@ fun AppBar(topAppBarText: String, onBackPressed: (() -> Unit)? = null) {
         title = {
             Row {
                 Image(
-               
+                    painterResource(id = R.drawable.ic_orbit_toolbar),
+                    contentDescrip
