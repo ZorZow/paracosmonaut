@@ -44,4 +44,7 @@ fun AppBar(topAppBarText: String, onBackPressed: (() -> Unit)? = null) {
             }
         },
         navigationIcon = onBackPressed?.let {
-            
+            {
+                IconButton(onClick = onBackPressed) {
+                    Icon(
+                      
