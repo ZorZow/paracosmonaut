@@ -49,4 +49,9 @@ fun AppBar(topAppBarText: String, onBackPressed: (() -> Unit)? = null) {
                     Icon(
                         Icons.Filled.ArrowBack,
                         contentDescription = "Back"
-              
+                    )
+                }
+            }
+        },
+        backgroundColor = Color.White,
+    
