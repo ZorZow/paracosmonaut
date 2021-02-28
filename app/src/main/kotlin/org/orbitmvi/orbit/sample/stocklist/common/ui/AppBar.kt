@@ -30,4 +30,9 @@ import androidx.compose.ui.res.painterResource
 import org.orbitmvi.orbit.sample.stocklist.R
 
 @Composable
-fun AppBar(topAppBarText: String, onBackPressed: ((
+fun AppBar(topAppBarText: String, onBackPressed: (() -> Unit)? = null) {
+    TopAppBar(
+        title = {
+            Row {
+                Image(
+               
