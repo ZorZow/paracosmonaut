@@ -54,4 +54,6 @@ fun AppBar(topAppBarText: String, onBackPressed: (() -> Unit)? = null) {
             }
         },
         backgroundColor = Color.White,
-    
+        contentColor = Color.Black
+    )
+}
