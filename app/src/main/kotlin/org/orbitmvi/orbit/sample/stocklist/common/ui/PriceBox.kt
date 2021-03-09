@@ -17,4 +17,6 @@
 package org.orbitmvi.orbit.sample.stocklist.common.ui
 
 import androidx.compose.foundation.layout.Arrangement
-import androidx.compose.foundat
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
+import androidx.compose.fo
