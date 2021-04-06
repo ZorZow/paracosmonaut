@@ -37,4 +37,8 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import org.orbitmvi.orbit.samp
+import org.orbitmvi.orbit.sample.stocklist.R
+import org.orbitmvi.orbit.sample.stocklist.streaming.stock.Tick
+
+@Composable
+fun PriceBox
