@@ -41,4 +41,8 @@ import org.orbitmvi.orbit.sample.stocklist.R
 import org.orbitmvi.orbit.sample.stocklist.streaming.stock.Tick
 
 @Composable
-fun PriceBox
+fun PriceBox(
+    price: String,
+    priceTick: Tick?,
+    color: Color,
+    style: Text
