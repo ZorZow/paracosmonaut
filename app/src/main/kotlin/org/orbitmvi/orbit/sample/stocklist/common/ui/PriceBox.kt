@@ -45,4 +45,9 @@ fun PriceBox(
     price: String,
     priceTick: Tick?,
     color: Color,
-    style: Text
+    style: TextStyle,
+    modifier: Modifier = Modifier
+) {
+    Surface(
+        shape = RectangleShape,
+        elevation = 4
