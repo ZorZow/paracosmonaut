@@ -50,4 +50,8 @@ fun PriceBox(
 ) {
     Surface(
         shape = RectangleShape,
-        elevation = 4
+        elevation = 4.dp,
+        color = color,
+        modifier = modifier
+            .padding(vertical = 4.dp)
+   
