@@ -54,4 +54,6 @@ fun PriceBox(
         color = color,
         modifier = modifier
             .padding(vertical = 4.dp)
-   
+            .padding(end = 4.dp)
+    ) {
+        Row(horizontalArrangement = Arrangement.SpaceBetw
