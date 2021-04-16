@@ -56,4 +56,5 @@ fun PriceBox(
             .padding(vertical = 4.dp)
             .padding(end = 4.dp)
     ) {
-        Row(horizontalArrangement = Arrangement.SpaceBetw
+        Row(horizontalArrangement = Arrangement.SpaceBetween, verticalAlignment = Alignment.CenterVertically) {
+            priceTick?.le
