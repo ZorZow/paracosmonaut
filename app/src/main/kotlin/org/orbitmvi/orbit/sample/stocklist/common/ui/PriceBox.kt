@@ -76,3 +76,9 @@ fun PriceBox(
         }
     }
 }
+
+@Preview
+@Composable
+fun PriceBoxPreview() {
+    Column {
+        PriceBox("2.64", Tick.Up, colorResourc
