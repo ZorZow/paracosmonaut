@@ -68,4 +68,6 @@ fun PriceBox(
             Text(
                 price,
                 style = style,
-             
+                color = Color.White,
+                textAlign = TextAlign.End,
+                fontWeight = Font
