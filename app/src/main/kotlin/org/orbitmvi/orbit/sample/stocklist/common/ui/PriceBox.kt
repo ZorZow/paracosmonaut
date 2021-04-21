@@ -64,3 +64,8 @@ fun PriceBox(
                     tint = Color.White,
                 )
             } ?: Spacer(Modifier)
+
+            Text(
+                price,
+                style = style,
+             
