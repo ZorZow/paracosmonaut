@@ -70,4 +70,9 @@ fun PriceBox(
                 style = style,
                 color = Color.White,
                 textAlign = TextAlign.End,
-                fontWeight = Font
+                fontWeight = FontWeight.Bold,
+                modifier = Modifier.padding(4.dp)
+            )
+        }
+    }
+}
