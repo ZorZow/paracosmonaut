@@ -60,4 +60,7 @@ fun PriceBox(
             priceTick?.let {
                 Icon(
                     painter = painterResource(id = if (priceTick == Tick.Up) R.drawable.arrow_up_bold else R.drawable.arrow_down_bold),
-                    contentDescr
+                    contentDescription = null,
+                    tint = Color.White,
+                )
+            } ?: Spacer(Modifier)
