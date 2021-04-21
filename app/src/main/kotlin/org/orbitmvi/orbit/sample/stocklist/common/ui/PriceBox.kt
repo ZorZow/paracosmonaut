@@ -59,4 +59,5 @@ fun PriceBox(
         Row(horizontalArrangement = Arrangement.SpaceBetween, verticalAlignment = Alignment.CenterVertically) {
             priceTick?.let {
                 Icon(
-                    painter = painterResource(id = if (priceTick == Tic
+                    painter = painterResource(id = if (priceTick == Tick.Up) R.drawable.arrow_up_bold else R.drawable.arrow_down_bold),
+                    contentDescr
