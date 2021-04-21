@@ -57,4 +57,6 @@ fun PriceBox(
             .padding(end = 4.dp)
     ) {
         Row(horizontalArrangement = Arrangement.SpaceBetween, verticalAlignment = Alignment.CenterVertically) {
-            priceTick?.le
+            priceTick?.let {
+                Icon(
+                    painter = painterResource(id = if (priceTick == Tic
