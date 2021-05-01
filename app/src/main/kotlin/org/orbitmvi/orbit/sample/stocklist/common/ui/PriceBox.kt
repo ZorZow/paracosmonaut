@@ -85,4 +85,6 @@ fun PriceBoxPreview() {
 
         PriceBox("2.63", Tick.Down, colorResource(android.R.color.holo_blue_dark), MaterialTheme.typography.body2)
 
-        PriceBox("2.61
+        PriceBox("2.61", null, colorResource(android.R.color.holo_red_dark), MaterialTheme.typography.body2)
+    }
+}
