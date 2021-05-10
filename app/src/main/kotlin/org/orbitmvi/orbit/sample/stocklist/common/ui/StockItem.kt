@@ -16,4 +16,6 @@
 
 package org.orbitmvi.orbit.sample.stocklist.list.ui
 
-import androidx.compos
+import androidx.compose.foundation.clickable
+import androidx.compose.foundation.layout.Arrangement
+import androidx.
