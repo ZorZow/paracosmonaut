@@ -32,4 +32,6 @@ import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import org.orbitmvi.orbit.sample.stocklist.comm
+import org.orbitmvi.orbit.sample.stocklist.common.ui.PriceBox
+import org.orbitmvi.orbit.sample.stocklist.streaming.stock.Stock
+import org.orbitmvi.orbit.
