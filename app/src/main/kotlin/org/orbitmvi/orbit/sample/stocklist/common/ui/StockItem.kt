@@ -37,4 +37,8 @@ import org.orbitmvi.orbit.sample.stocklist.streaming.stock.Stock
 import org.orbitmvi.orbit.sample.stocklist.streaming.stock.Tick
 
 @Composable
-fun StockItem(stock: Stock, onClick: (stock: Stock) 
+fun StockItem(stock: Stock, onClick: (stock: Stock) -> Unit) {
+    Column(modifier = Modifier
+        .fillMaxWidth()
+        .clickable { onClick(stock) }
+     
