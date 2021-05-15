@@ -44,4 +44,6 @@ fun StockItem(stock: Stock, onClick: (stock: Stock) -> Unit) {
         .padding(8.dp)) {
         Text(
             stock.name,
-            styl
+            style = MaterialTheme.typography.subtitle1,
+            modifier = Modifier.fillMaxWidth()
+    
