@@ -41,4 +41,7 @@ fun StockItem(stock: Stock, onClick: (stock: Stock) -> Unit) {
     Column(modifier = Modifier
         .fillMaxWidth()
         .clickable { onClick(stock) }
-     
+        .padding(8.dp)) {
+        Text(
+            stock.name,
+            styl
