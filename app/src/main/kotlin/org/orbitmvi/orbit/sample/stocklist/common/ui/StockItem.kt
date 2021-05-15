@@ -46,4 +46,9 @@ fun StockItem(stock: Stock, onClick: (stock: Stock) -> Unit) {
             stock.name,
             style = MaterialTheme.typography.subtitle1,
             modifier = Modifier.fillMaxWidth()
-    
+        )
+
+        Row(horizontalArrangement = Arrangement.SpaceEvenly) {
+
+            PriceBox(
+       
