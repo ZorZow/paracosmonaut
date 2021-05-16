@@ -51,4 +51,6 @@ fun StockItem(stock: Stock, onClick: (stock: Stock) -> Unit) {
         Row(horizontalArrangement = Arrangement.SpaceEvenly) {
 
             PriceBox(
-       
+                price = stock.bid,
+                priceTick = stock.bidTick,
+                color = c
