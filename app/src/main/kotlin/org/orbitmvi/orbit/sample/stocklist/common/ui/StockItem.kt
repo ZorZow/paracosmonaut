@@ -54,4 +54,7 @@ fun StockItem(stock: Stock, onClick: (stock: Stock) -> Unit) {
                 price = stock.bid,
                 priceTick = stock.bidTick,
                 color = colorResource(android.R.color.holo_red_dark),
-                style = MaterialTheme.ty
+                style = MaterialTheme.typography.body2,
+                modifier = Modifier
+                    .weight(1f)
+           
