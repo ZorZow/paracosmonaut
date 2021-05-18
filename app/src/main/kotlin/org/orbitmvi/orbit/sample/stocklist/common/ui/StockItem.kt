@@ -57,4 +57,7 @@ fun StockItem(stock: Stock, onClick: (stock: Stock) -> Unit) {
                 style = MaterialTheme.typography.body2,
                 modifier = Modifier
                     .weight(1f)
-           
+                    .align(Alignment.CenterVertically)
+            )
+            PriceBox(
+              
