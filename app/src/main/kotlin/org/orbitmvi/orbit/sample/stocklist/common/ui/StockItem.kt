@@ -60,4 +60,6 @@ fun StockItem(stock: Stock, onClick: (stock: Stock) -> Unit) {
                     .align(Alignment.CenterVertically)
             )
             PriceBox(
-              
+                price = stock.ask,
+                priceTick = stock.askTick,
+                color = colorR
