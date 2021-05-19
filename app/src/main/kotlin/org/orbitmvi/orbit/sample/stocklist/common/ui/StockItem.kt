@@ -62,4 +62,5 @@ fun StockItem(stock: Stock, onClick: (stock: Stock) -> Unit) {
             PriceBox(
                 price = stock.ask,
                 priceTick = stock.askTick,
-                color = colorR
+                color = colorResource(android.R.color.holo_blue_dark),
+                style = MaterialTheme.typography.bod
