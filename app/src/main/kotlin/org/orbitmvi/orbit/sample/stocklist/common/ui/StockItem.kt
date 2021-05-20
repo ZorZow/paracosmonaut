@@ -68,4 +68,7 @@ fun StockItem(stock: Stock, onClick: (stock: Stock) -> Unit) {
                     .weight(1f)
             )
 
-      
+            Box(
+                modifier = Modifier
+                    .weight(1f)
+       
