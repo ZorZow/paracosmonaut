@@ -73,4 +73,7 @@ fun StockItem(stock: Stock, onClick: (stock: Stock) -> Unit) {
                     .weight(1f)
                     .padding(vertical = 4.dp)
                     .padding(end = 4.dp),
-                conte
+                contentAlignment = Alignment.CenterEnd
+            ) {
+                Text(
+            
