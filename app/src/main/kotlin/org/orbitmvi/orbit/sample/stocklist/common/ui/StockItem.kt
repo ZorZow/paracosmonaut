@@ -71,4 +71,6 @@ fun StockItem(stock: Stock, onClick: (stock: Stock) -> Unit) {
             Box(
                 modifier = Modifier
                     .weight(1f)
-       
+                    .padding(vertical = 4.dp)
+                    .padding(end = 4.dp),
+                conte
