@@ -78,4 +78,5 @@ fun StockItem(stock: Stock, onClick: (stock: Stock) -> Unit) {
                 Text(
                     stock.timestamp,
                     style = MaterialTheme.typography.body2,
-                
+                    fontWeight = FontWeight.Bold,
+                    modifier =
