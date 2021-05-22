@@ -76,4 +76,6 @@ fun StockItem(stock: Stock, onClick: (stock: Stock) -> Unit) {
                 contentAlignment = Alignment.CenterEnd
             ) {
                 Text(
-            
+                    stock.timestamp,
+                    style = MaterialTheme.typography.body2,
+                
