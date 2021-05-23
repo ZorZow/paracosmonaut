@@ -97,4 +97,6 @@ fun StocksPreview() {
 @Preview
 @Composable
 fun StocksPreview3() {
-    val st
+    val stock = Stock("1", "Anduct", "2.64", Tick.Down, "2.65", Tick.Up, "06:35:08")
+    StockItem(stock) {}
+}
