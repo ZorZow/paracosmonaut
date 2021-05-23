@@ -90,4 +90,11 @@ fun StockItem(stock: Stock, onClick: (stock: Stock) -> Unit) {
 @Preview
 @Composable
 fun StocksPreview() {
-    val stock = Stock("1", "Anduct", "2.64", Tick.Up, "2.65", Tick
+    val stock = Stock("1", "Anduct", "2.64", Tick.Up, "2.65", Tick.Down, "06:35:08")
+    StockItem(stock) {}
+}
+
+@Preview
+@Composable
+fun StocksPreview3() {
+    val st
