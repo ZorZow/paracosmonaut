@@ -14,4 +14,7 @@
  * limitations under the License.
  */
 
-package 
+package org.orbitmvi.orbit.sample.stocklist.detail.business
+
+import android.os.Parcelable
+import kotlinx
