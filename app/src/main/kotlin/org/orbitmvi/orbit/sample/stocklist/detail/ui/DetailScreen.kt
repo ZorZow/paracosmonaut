@@ -152,3 +152,41 @@ fun DetailScreen(navController: NavController, viewModel: DetailViewModel) {
                 Text(
                     text = "High:",
                     textAlign = TextAlign.End,
+                    style = MaterialTheme.typography.body2.copy(fontWeight = FontWeight.Bold),
+                    modifier = Modifier
+                        .weight(1f)
+                        .padding(horizontal = 4.dp)
+                )
+                Text(
+                    text = state.stock?.max ?: "",
+                    textAlign = TextAlign.Start,
+                    style = MaterialTheme.typography.body2,
+                    modifier = Modifier
+                        .weight(1f)
+                        .padding(horizontal = 4.dp)
+                )
+            }
+            Row(
+                horizontalArrangement = Arrangement.SpaceEvenly,
+                modifier = Modifier.padding(top = 8.dp)
+            ) {
+                Text(
+                    text = "Low:",
+                    textAlign = TextAlign.End,
+                    style = MaterialTheme.typography.body2.copy(fontWeight = FontWeight.Bold),
+                    modifier = Modifier
+                        .weight(1f)
+                        .padding(horizontal = 4.dp)
+                )
+                Text(
+                    text = state.stock?.min ?: "",
+                    textAlign = TextAlign.Start,
+                    style = MaterialTheme.typography.body2,
+                    modifier = Modifier
+                        .weight(1f)
+                        .padding(horizontal = 4.dp)
+                )
+            }
+        }
+    }
+}
