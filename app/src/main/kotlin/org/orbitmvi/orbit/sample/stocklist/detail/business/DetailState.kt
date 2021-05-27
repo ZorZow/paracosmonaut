@@ -18,4 +18,9 @@ package org.orbitmvi.orbit.sample.stocklist.detail.business
 
 import android.os.Parcelable
 import kotlinx.parcelize.Parcelize
-import org.orbitmvi.orbit.sample.stocklist.streaming.stock.StockDet
+import org.orbitmvi.orbit.sample.stocklist.streaming.stock.StockDetail
+
+@Parcelize
+data class DetailState(
+    val stock: StockDetail? = null
+) : Parcelable
