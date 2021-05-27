@@ -49,3 +49,106 @@ fun DetailScreen(navController: NavController, viewModel: DetailViewModel) {
         AppBar(state.stock?.name ?: stringResource(id = R.string.app_name)) {
             navController.popBackStack()
         }
+
+        Column(
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(8.dp)
+        ) {
+            Row(
+                horizontalArrangement = Arrangement.SpaceEvenly,
+                modifier = Modifier
+                    .fillMaxWidth()
+            ) {
+
+                PriceBox(
+                    price = state.stock?.bid ?: "",
+                    priceTick = state.stock?.bidTick,
+                    color = colorResource(android.R.color.holo_red_dark),
+                    style = MaterialTheme.typography.body1,
+                    modifier = Modifier
+                        .weight(1f)
+                        .height(48.dp)
+                )
+                PriceBox(
+                    price = state.stock?.ask ?: "",
+                    priceTick = state.stock?.askTick,
+                    color = colorResource(android.R.color.holo_blue_dark),
+                    style = MaterialTheme.typography.body1,
+                    modifier = Modifier
+                        .weight(1f)
+                        .height(48.dp)
+                )
+            }
+
+            Row(
+                horizontalArrangement = Arrangement.SpaceEvenly,
+                modifier = Modifier
+            ) {
+                Text(
+                    text = state.stock?.bidQuantity ?: "",
+                    textAlign = TextAlign.End,
+                    style = MaterialTheme.typography.body2,
+                    modifier = Modifier
+                        .weight(1f)
+                        .padding(horizontal = 4.dp)
+                )
+                Text(
+                    text = state.stock?.askQuantity ?: "",
+                    textAlign = TextAlign.End,
+                    style = MaterialTheme.typography.body2,
+                    modifier = Modifier
+                        .weight(1f)
+                        .padding(horizontal = 4.dp)
+                )
+            }
+
+            Row(
+                horizontalArrangement = Arrangement.SpaceEvenly,
+                modifier = Modifier.padding(top = 16.dp)
+            ) {
+                Text(
+                    text = "Change %:",
+                    textAlign = TextAlign.End,
+                    style = MaterialTheme.typography.body2.copy(fontWeight = FontWeight.Bold),
+                    modifier = Modifier
+                        .weight(1f)
+                        .padding(horizontal = 4.dp)
+                )
+                Text(
+                    text = state.stock?.pctChange ?: "",
+                    textAlign = TextAlign.Start,
+                    style = MaterialTheme.typography.body2,
+                    modifier = Modifier
+                        .weight(1f)
+                        .padding(horizontal = 4.dp)
+                )
+            }
+            Row(
+                horizontalArrangement = Arrangement.SpaceEvenly,
+                modifier = Modifier.padding(top = 8.dp)
+            ) {
+                Text(
+                    text = "Timestamp:",
+                    textAlign = TextAlign.End,
+                    style = MaterialTheme.typography.body2.copy(fontWeight = FontWeight.Bold),
+                    modifier = Modifier
+                        .weight(1f)
+                        .padding(horizontal = 4.dp)
+                )
+                Text(
+                    text = state.stock?.timestamp ?: "",
+                    textAlign = TextAlign.Start,
+                    style = MaterialTheme.typography.body2,
+                    modifier = Modifier
+                        .weight(1f)
+                        .padding(horizontal = 4.dp)
+                )
+            }
+            Row(
+                horizontalArrangement = Arrangement.SpaceEvenly,
+                modifier = Modifier.padding(top = 8.dp)
+            ) {
+                Text(
+                    text = "High:",
+                    textAlign = TextAlign.End,
