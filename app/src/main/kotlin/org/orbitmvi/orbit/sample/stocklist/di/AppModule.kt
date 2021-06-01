@@ -20,4 +20,6 @@ import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
-import ja
+import javax.inject.Singleton
+import org.orbitmvi.orbit.sample.stocklist.streaming.StreamingClient
+import org.orbi
