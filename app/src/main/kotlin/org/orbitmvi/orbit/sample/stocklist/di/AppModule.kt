@@ -16,4 +16,8 @@
 
 package org.orbitmvi.orbit.sample.stocklist.di
 
-import dagger.Modul
+import dagger.Module
+import dagger.Provides
+import dagger.hilt.InstallIn
+import dagger.hilt.components.SingletonComponent
+import ja
