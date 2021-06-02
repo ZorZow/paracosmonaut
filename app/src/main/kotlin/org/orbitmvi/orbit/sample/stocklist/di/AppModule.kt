@@ -22,4 +22,7 @@ import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
 import javax.inject.Singleton
 import org.orbitmvi.orbit.sample.stocklist.streaming.StreamingClient
-import org.orbi
+import org.orbitmvi.orbit.sample.stocklist.streaming.stock.StockRepository
+
+@Module
+@InstallIn(Singleto
