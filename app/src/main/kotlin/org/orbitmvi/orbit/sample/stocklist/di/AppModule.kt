@@ -33,4 +33,5 @@ object AppModule {
 
     @Provides
     @Singleton
-    fun provideStoc
+    fun provideStockRepository(streamingClient: StreamingClient): StockRepository = StockRepository(streamingClient)
+}
