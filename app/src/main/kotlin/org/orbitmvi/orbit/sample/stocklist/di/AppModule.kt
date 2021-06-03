@@ -29,4 +29,8 @@ import org.orbitmvi.orbit.sample.stocklist.streaming.stock.StockRepository
 object AppModule {
     @Provides
     @Singleton
-    fun provideStreamin
+    fun provideStreamingClient(): StreamingClient = StreamingClient()
+
+    @Provides
+    @Singleton
+    fun provideStoc
