@@ -14,4 +14,7 @@
  * limitations under the License.
  */
 
-package org.orbitmvi.orbit.sample.stockli
+package org.orbitmvi.orbit.sample.stocklist.list.business
+
+sealed class ListSideEffect {
+    data class NavigateToDetail(val itemN
