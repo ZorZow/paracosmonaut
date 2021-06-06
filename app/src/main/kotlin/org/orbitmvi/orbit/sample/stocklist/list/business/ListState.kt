@@ -1,3 +1,4 @@
+
 /*
  * Copyright 2021 Mikołaj Leszczyński & Appmattus Limited
  *
@@ -16,6 +17,11 @@
 
 package org.orbitmvi.orbit.sample.stocklist.list.business
 
-sealed class ListSideEffect {
-    data class NavigateToDetail(val itemName: String) : ListSideEffect()
-}
+import android.os.Parcelable
+import org.orbitmvi.orbit.sample.stocklist.streaming.stock.Stock
+import kotlinx.parcelize.Parcelize
+
+@Parcelize
+data class ListState(
+    val stocks: List<Stock> = emptyList()
+) : Parcelable
