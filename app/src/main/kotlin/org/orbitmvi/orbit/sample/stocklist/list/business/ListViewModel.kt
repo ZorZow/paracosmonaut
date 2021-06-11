@@ -24,4 +24,6 @@ import kotlinx.coroutines.flow.collect
 import org.orbitmvi.orbit.ContainerHost
 import org.orbitmvi.orbit.sample.stocklist.streaming.stock.StockRepository
 import org.orbitmvi.orbit.syntax.simple.intent
-import org.orbitmvi.orbit.s
+import org.orbitmvi.orbit.syntax.simple.postSideEffect
+import org.orbitmvi.orbit.syntax.simple.reduce
+import org.orbit
