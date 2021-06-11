@@ -22,4 +22,6 @@ import dagger.hilt.android.lifecycle.HiltViewModel
 import javax.inject.Inject
 import kotlinx.coroutines.flow.collect
 import org.orbitmvi.orbit.ContainerHost
-import org.orbitmvi.orbit.sample.stocklist.streaming.stoc
+import org.orbitmvi.orbit.sample.stocklist.streaming.stock.StockRepository
+import org.orbitmvi.orbit.syntax.simple.intent
+import org.orbitmvi.orbit.s
