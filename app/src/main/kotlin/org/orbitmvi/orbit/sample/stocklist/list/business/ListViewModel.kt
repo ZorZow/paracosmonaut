@@ -29,3 +29,6 @@ import org.orbitmvi.orbit.syntax.simple.reduce
 import org.orbitmvi.orbit.syntax.simple.repeatOnSubscription
 import org.orbitmvi.orbit.viewmodel.container
 
+@HiltViewModel
+class ListViewModel @Inject constructor(
+    savedStateHandle: SavedStateHandle
