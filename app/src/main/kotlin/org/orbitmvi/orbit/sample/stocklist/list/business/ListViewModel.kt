@@ -31,4 +31,6 @@ import org.orbitmvi.orbit.viewmodel.container
 
 @HiltViewModel
 class ListViewModel @Inject constructor(
-    savedStateHandle: SavedStateHandle
+    savedStateHandle: SavedStateHandle,
+    private val stockRepository: StockRepository
+) : ViewModel(), ContainerHost<ListSta
