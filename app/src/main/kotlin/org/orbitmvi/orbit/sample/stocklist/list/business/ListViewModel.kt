@@ -37,4 +37,6 @@ class ListViewModel @Inject constructor(
 
     override val container = container<ListState, ListSideEffect>(ListState(), savedStateHandle) { requestStocks() }
 
-    private fun requestStocks(): Unit = intent(r
+    private fun requestStocks(): Unit = intent(registerIdling = false) {
+        repeatOnSubscription {
+            stockRepository.stockList().
