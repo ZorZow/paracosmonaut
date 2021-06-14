@@ -33,4 +33,6 @@ import org.orbitmvi.orbit.viewmodel.container
 class ListViewModel @Inject constructor(
     savedStateHandle: SavedStateHandle,
     private val stockRepository: StockRepository
-) : ViewModel(), ContainerHost<ListSta
+) : ViewModel(), ContainerHost<ListState, ListSideEffect> {
+
+    override val container = container<ListState, ListSideEffect>(Li
