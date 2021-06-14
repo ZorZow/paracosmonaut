@@ -35,4 +35,6 @@ class ListViewModel @Inject constructor(
     private val stockRepository: StockRepository
 ) : ViewModel(), ContainerHost<ListState, ListSideEffect> {
 
-    override val container = container<ListState, ListSideEffect>(Li
+    override val container = container<ListState, ListSideEffect>(ListState(), savedStateHandle) { requestStocks() }
+
+    private fun requestStocks(): Unit = intent(r
