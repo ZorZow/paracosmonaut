@@ -48,4 +48,6 @@ class ListViewModel @Inject constructor(
     }
 
     fun viewMarket(itemName: String) = intent {
-      
+        postSideEffect(ListSideEffect.NavigateToDetail(itemName))
+    }
+}
