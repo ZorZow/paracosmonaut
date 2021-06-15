@@ -43,4 +43,9 @@ class ListViewModel @Inject constructor(
                 reduce {
                     state.copy(stocks = it)
                 }
- 
+            }
+        }
+    }
+
+    fun viewMarket(itemName: String) = intent {
+      
