@@ -39,4 +39,8 @@ class ListViewModel @Inject constructor(
 
     private fun requestStocks(): Unit = intent(registerIdling = false) {
         repeatOnSubscription {
-            stockRepository.stockList().
+            stockRepository.stockList().collect {
+                reduce {
+                    state.copy(stocks = it)
+                }
+ 
