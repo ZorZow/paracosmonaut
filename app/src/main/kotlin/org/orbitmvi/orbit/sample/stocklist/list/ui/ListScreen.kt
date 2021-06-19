@@ -23,4 +23,6 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.res.stringResource
 import androidx.navigation.NavController
 import org.orbitmvi.orbit.compose.collectAsState
-import org.orbitmvi.orbit.compose.
+import org.orbitmvi.orbit.compose.collectSideEffect
+import org.orbitmvi.orbit.sample.stocklist.R
+import org.orbitmvi.orbit.sampl
