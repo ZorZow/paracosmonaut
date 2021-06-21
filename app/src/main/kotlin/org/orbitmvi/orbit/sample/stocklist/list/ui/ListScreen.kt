@@ -33,4 +33,9 @@ import org.orbitmvi.orbit.sample.stocklist.list.business.ListViewModel
 fun ListScreen(navController: NavController, viewModel: ListViewModel) {
 
     val state = viewModel.collectAsState()
-    viewModel.collectSideEffect { handleSideEffect(navCont
+    viewModel.collectSideEffect { handleSideEffect(navController, it) }
+
+    Column {
+        AppBar(stringResource(id = R.string.app_name))
+
+        LazyCo
