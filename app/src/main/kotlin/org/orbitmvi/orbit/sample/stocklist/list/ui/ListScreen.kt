@@ -32,4 +32,5 @@ import org.orbitmvi.orbit.sample.stocklist.list.business.ListViewModel
 @Composable
 fun ListScreen(navController: NavController, viewModel: ListViewModel) {
 
-    
+    val state = viewModel.collectAsState()
+    viewModel.collectSideEffect { handleSideEffect(navCont
