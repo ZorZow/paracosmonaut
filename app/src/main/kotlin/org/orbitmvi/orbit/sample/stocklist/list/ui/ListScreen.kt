@@ -27,4 +27,9 @@ import org.orbitmvi.orbit.compose.collectSideEffect
 import org.orbitmvi.orbit.sample.stocklist.R
 import org.orbitmvi.orbit.sample.stocklist.common.ui.AppBar
 import org.orbitmvi.orbit.sample.stocklist.list.business.ListSideEffect
-import org.orbitmvi.orbit.sample.stocklist.list.business.ListViewM
+import org.orbitmvi.orbit.sample.stocklist.list.business.ListViewModel
+
+@Composable
+fun ListScreen(navController: NavController, viewModel: ListViewModel) {
+
+    
