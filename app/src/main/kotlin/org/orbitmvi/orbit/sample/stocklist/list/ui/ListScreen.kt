@@ -41,4 +41,8 @@ fun ListScreen(navController: NavController, viewModel: ListViewModel) {
         LazyColumn {
             items(state.value.stocks) { stock ->
                 StockItem(stock) {
-             
+                    viewModel.viewMarket(stock.itemName)
+                }
+            }
+        }
+    
