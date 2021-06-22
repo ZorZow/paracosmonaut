@@ -38,4 +38,7 @@ fun ListScreen(navController: NavController, viewModel: ListViewModel) {
     Column {
         AppBar(stringResource(id = R.string.app_name))
 
-        LazyCo
+        LazyColumn {
+            items(state.value.stocks) { stock ->
+                StockItem(stock) {
+             
