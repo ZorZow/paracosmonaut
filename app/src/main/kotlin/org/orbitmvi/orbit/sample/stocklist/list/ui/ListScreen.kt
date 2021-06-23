@@ -45,4 +45,7 @@ fun ListScreen(navController: NavController, viewModel: ListViewModel) {
                 }
             }
         }
-    
+    }
+}
+
+private fun handleSideEffect(navController: NavController, sideEffect: ListSideEffect) 
