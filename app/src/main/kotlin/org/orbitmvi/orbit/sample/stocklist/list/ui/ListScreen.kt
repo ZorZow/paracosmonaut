@@ -48,4 +48,6 @@ fun ListScreen(navController: NavController, viewModel: ListViewModel) {
     }
 }
 
-private fun handleSideEffect(navController: NavController, sideEffect: ListSideEffect) 
+private fun handleSideEffect(navController: NavController, sideEffect: ListSideEffect) {
+    when (sideEffect) {
+        is ListSideEffect.NavigateToDetail -> navController.navi
