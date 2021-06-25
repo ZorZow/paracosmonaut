@@ -14,4 +14,6 @@
  * limitations under the License.
  */
 
-package org.orbitmvi
+package org.orbitmvi.orbit.sample.stocklist.streaming
+
+import com.lightstreamer.client.ItemU
