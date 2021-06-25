@@ -16,4 +16,6 @@
 
 package org.orbitmvi.orbit.sample.stocklist.streaming
 
-import com.lightstreamer.client.ItemU
+import com.lightstreamer.client.ItemUpdate
+import com.lightstreamer.client.Subscription
+import com.lightstreamer.client.SubscriptionLis
