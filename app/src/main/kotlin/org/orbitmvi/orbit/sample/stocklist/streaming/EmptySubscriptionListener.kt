@@ -24,4 +24,7 @@ import com.lightstreamer.client.SubscriptionListener
  * Empty SubscriptionListener
  */
 @Suppress("TooManyFunctions")
-object EmptySubscriptionListen
+object EmptySubscriptionListener : SubscriptionListener {
+    override fun onListenEnd(p0: Subscription) = Unit
+
+    overr
