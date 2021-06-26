@@ -27,4 +27,8 @@ import com.lightstreamer.client.SubscriptionListener
 object EmptySubscriptionListener : SubscriptionListener {
     override fun onListenEnd(p0: Subscription) = Unit
 
-    overr
+    override fun onItemUpdate(p0: ItemUpdate) = Unit
+
+    override fun onSubscription() = Unit
+
+    override fun 
