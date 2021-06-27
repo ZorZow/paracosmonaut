@@ -43,4 +43,6 @@ object EmptySubscriptionListener : SubscriptionListener {
 
     override fun onUnsubscription() = Unit
 
-    override
+    override fun onCommandSecondLevelItemLostUpdates(p0: Int, p1: String) = Unit
+
+    override fun onListenStart(
