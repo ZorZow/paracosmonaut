@@ -39,4 +39,8 @@ object EmptySubscriptionListener : SubscriptionListener {
 
     override fun onClearSnapshot(p0: String?, p1: Int) = Unit
 
-    override fun onCommandSecondLevelSubscriptionError(p0: Int
+    override fun onCommandSecondLevelSubscriptionError(p0: Int, p1: String?, p2: String?) = Unit
+
+    override fun onUnsubscription() = Unit
+
+    override
