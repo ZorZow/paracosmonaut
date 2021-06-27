@@ -33,4 +33,8 @@ object EmptySubscriptionListener : SubscriptionListener {
 
     override fun onEndOfSnapshot(p0: String?, p1: Int) = Unit
 
-    override fun onItemLostUpdates(p0: String?, p1: Int, p2: 
+    override fun onItemLostUpdates(p0: String?, p1: Int, p2: Int) = Unit
+
+    override fun onSubscriptionError(p0: Int, p1: String?) = Unit
+
+    override fun onCl
