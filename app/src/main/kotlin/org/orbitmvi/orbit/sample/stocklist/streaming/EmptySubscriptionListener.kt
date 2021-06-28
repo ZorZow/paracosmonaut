@@ -45,4 +45,7 @@ object EmptySubscriptionListener : SubscriptionListener {
 
     override fun onCommandSecondLevelItemLostUpdates(p0: Int, p1: String) = Unit
 
-    override fun onListenStart(
+    override fun onListenStart(p0: Subscription) = Unit
+
+    override fun onRealMaxFrequency(p0: String?) = Unit
+}
