@@ -14,4 +14,10 @@
  * limitations under the License.
  */
 
-package org.orbitmvi.orbit.sample.stocklist.streamin
+package org.orbitmvi.orbit.sample.stocklist.streaming.stock
+
+import android.os.Parcelable
+import kotlinx.parcelize.Parcelize
+
+@Parcelize
+data cl
