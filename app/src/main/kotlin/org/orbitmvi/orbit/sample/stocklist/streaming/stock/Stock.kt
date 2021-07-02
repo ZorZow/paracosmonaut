@@ -20,4 +20,9 @@ import android.os.Parcelable
 import kotlinx.parcelize.Parcelize
 
 @Parcelize
-data cl
+data class Stock(
+    val itemName: String,
+    val name: String,
+    val bid: String,
+    val bidTick: Tick?,
+    va
