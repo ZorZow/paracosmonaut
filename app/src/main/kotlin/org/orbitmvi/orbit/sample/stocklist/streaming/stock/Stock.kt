@@ -25,4 +25,7 @@ data class Stock(
     val name: String,
     val bid: String,
     val bidTick: Tick?,
-    va
+    val ask: String,
+    val askTick: Tick?,
+    val timestamp: String
+) : Parcelable
