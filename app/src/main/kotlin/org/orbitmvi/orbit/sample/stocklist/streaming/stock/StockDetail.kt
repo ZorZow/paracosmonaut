@@ -16,4 +16,9 @@
 
 package org.orbitmvi.orbit.sample.stocklist.streaming.stock
 
-import 
+import android.os.Parcelable
+import kotlinx.parcelize.Parcelize
+
+@Parcelize
+data class StockDetail(
+    val itemName: St
