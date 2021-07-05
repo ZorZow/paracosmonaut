@@ -21,4 +21,8 @@ import kotlinx.parcelize.Parcelize
 
 @Parcelize
 data class StockDetail(
-    val itemName: St
+    val itemName: String,
+    val name: String,
+    val pctChange: String,
+    val bid: String,
+    val bidTick: 
