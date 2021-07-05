@@ -25,4 +25,8 @@ data class StockDetail(
     val name: String,
     val pctChange: String,
     val bid: String,
-    val bidTick: 
+    val bidTick: Tick?,
+    val bidQuantity: String,
+    val ask: String,
+    val askTick: Tick?,
+    val askQuantity
