@@ -82,3 +82,97 @@ class StockRepository(private val client: StreamingClient) {
                                 bidJobs[p0.itemPos]?.cancel()
 
                                 stockList[p0.itemPos - 1] = stockList[p0.itemPos - 1]?.copy(bidTick = bidTick)
+
+                                bidJobs[p0.itemPos] = async {
+                                    @Suppress("MagicNumber")
+                                    (delay(300))
+
+                                    stockList[p0.itemPos - 1] = stockList[p0.itemPos - 1]?.copy(bidTick = null)
+                                    trySend(stockList.filterNotNull())
+                                }
+                            }
+
+                            askTick?.let {
+                                askJobs[p0.itemPos]?.cancel()
+
+                                stockList[p0.itemPos - 1] = stockList[p0.itemPos - 1]?.copy(askTick = askTick)
+
+                                askJobs[p0.itemPos] = async {
+                                    @Suppress("MagicNumber")
+                                    (delay(300))
+
+                                    stockList[p0.itemPos - 1] = stockList[p0.itemPos - 1]?.copy(askTick = null)
+                                    trySend(stockList.filterNotNull())
+                                }
+                            }
+
+                            trySend(stockList.filterNotNull())
+                        }
+                    }
+                }
+            )
+        }
+
+        client.addSubscription(subscription)
+
+        awaitClose {
+            client.removeSubscription(subscription)
+        }
+    }
+
+    private fun tickDirection(currentValue: String?, newValue: String): Tick? {
+        if (newValue != currentValue && !currentValue.isNullOrEmpty()) {
+            val diff = newValue.toDouble().compareTo(currentValue.toDouble())
+
+            if (diff != 0) {
+                return if (diff > 0) Tick.Up else Tick.Down
+            }
+        }
+        return null
+    }
+
+    @Suppress("EXPERIMENTAL_API_USAGE")
+    fun stockDetails(itemName: String): Flow<StockDetail> = callbackFlow {
+        var detail: StockDetail? = null
+        var bidJob: Job? = null
+        var askJob: Job? = null
+
+        val subscription = Subscription("MERGE", itemName, detailSubscriptionFields).apply {
+            dataAdapter = "QUOTE_ADAPTER"
+            requestedSnapshot = "yes"
+
+            addListener(
+                object : SubscriptionListener by EmptySubscriptionListener {
+                    @Suppress("LongMethod")
+                    override fun onItemUpdate(p0: ItemUpdate) {
+                        val stockName = p0.getValue("stock_name")
+                        val pctChange = p0.getValue("pct_change")?.to2dp()
+                        val formattedBid = p0.getValue("bid")?.to2dp()
+                        val bidQuantity = p0.getValue("bid_quantity")
+                        val formattedAsk = p0.getValue("ask")?.to2dp()
+                        val askQuantity = p0.getValue("ask_quantity")
+                        val min = p0.getValue("min")?.to2dp()
+                        val max = p0.getValue("max")?.to2dp()
+                        val formattedTimestamp = p0.getValue("timestamp")?.toFormattedTimestamp()
+
+                        if (stockName != null &&
+                            pctChange != null &&
+                            formattedBid != null &&
+                            bidQuantity != null &&
+                            formattedAsk != null &&
+                            askQuantity != null &&
+                            min != null &&
+                            max != null &&
+                            formattedTimestamp != null
+                        ) {
+                            val bidTick = tickDirection(detail?.bid, formattedBid)
+                            val askTick = tickDirection(detail?.ask, formattedAsk)
+
+                            detail = detail?.copy(
+                                pctChange = pctChange,
+                                bid = formattedBid,
+                                bidQuantity = bidQuantity,
+                                ask = formattedAsk,
+                                askQuantity = askQuantity,
+                                min = min,
+                                max = max,
