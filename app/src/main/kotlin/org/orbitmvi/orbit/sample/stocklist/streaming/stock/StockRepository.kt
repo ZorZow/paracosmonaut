@@ -176,3 +176,74 @@ class StockRepository(private val client: StreamingClient) {
                                 askQuantity = askQuantity,
                                 min = min,
                                 max = max,
+                                timestamp = formattedTimestamp
+                            ) ?: StockDetail(
+                                itemName = itemName,
+                                name = stockName,
+                                pctChange = pctChange,
+                                bid = formattedBid,
+                                bidTick = null,
+                                bidQuantity = bidQuantity,
+                                ask = formattedAsk,
+                                askTick = null,
+                                askQuantity = askQuantity,
+                                min = min,
+                                max = max,
+                                timestamp = formattedTimestamp
+                            )
+
+                            bidTick?.let {
+                                bidJob?.cancel()
+
+                                detail = detail?.copy(bidTick = bidTick)
+
+                                bidJob = async {
+                                    @Suppress("MagicNumber")
+                                    (delay(300))
+
+                                    detail = detail?.copy(bidTick = null)
+                                    trySend(detail!!)
+                                }
+                            }
+
+                            askTick?.let {
+                                askJob?.cancel()
+
+                                detail = detail?.copy(askTick = askTick)
+
+                                askJob = async {
+                                    @Suppress("MagicNumber")
+                                    (delay(300))
+
+                                    detail = detail?.copy(askTick = null)
+                                    trySend(detail!!)
+                                }
+                            }
+
+                            trySend(detail!!)
+                        }
+                    }
+                }
+            )
+        }
+
+        client.addSubscription(subscription)
+
+        awaitClose {
+            client.removeSubscription(subscription)
+        }
+    }
+
+    fun String.to2dp(): String = toBigDecimal().setScale(2, RoundingMode.HALF_UP).toPlainString()
+
+    fun String.toFormattedTimestamp(): String = toLong().let { rawTimestamp ->
+        if (DateUtils.isToday(rawTimestamp)) {
+            DateTimeFormatter.ofLocalizedTime(FormatStyle.MEDIUM)
+            LocalDateTime.ofInstant(Instant.ofEpochMilli(rawTimestamp), ZoneId.systemDefault())
+                .format(DateTimeFormatter.ofPattern("HH:mm:ss"))
+        } else {
+            LocalDateTime.ofInstant(Instant.ofEpochMilli(rawTimestamp), ZoneId.systemDefault())
+                .format(DateTimeFormatter.ofLocalizedDate(FormatStyle.SHORT))
+        }
+    }
+}
