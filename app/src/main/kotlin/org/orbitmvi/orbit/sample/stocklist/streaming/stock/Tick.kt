@@ -14,4 +14,8 @@
  * limitations under the License.
  */
 
-package or
+package org.orbitmvi.orbit.sample.stocklist.streaming.stock
+
+enum class Tick {
+    Up, Down
+}
