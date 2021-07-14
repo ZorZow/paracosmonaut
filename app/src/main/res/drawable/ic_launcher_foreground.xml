@@ -17,3 +17,6 @@
     android:width="108dp"
     android:height="108dp"
     android:viewportWidth="108"
+    android:viewportHeight="108">
+  <group android:scaleX="2.9009302"
+      android:scal
