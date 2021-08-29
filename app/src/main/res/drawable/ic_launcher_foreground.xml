@@ -73,4 +73,7 @@
     <path
         android:fillColor="#FF000000"
         android:pathData="M19.4904,14.2584c-0.0142,0.0038 -0.0274,0.0104 -0.0406,0.018L18.8438,14.6346l0.6061,-0.3582c0.0122,-0.0076 0.0264,-0.0142 0.0406,-0.018z"
-        android:strokeAlp
+        android:strokeAlpha="0.1"
+        android:fillAlpha="0.1"/>
+    <path
+        android:pathData="M
