@@ -92,4 +92,4 @@
         android:strokeAlpha="0.1"
         android:fillAlpha="0.1"/>
     <path
-        androi
+        android:pathData="M19.5526,14.2508c0.016,0.001 0.0312,0.0038 0.0472,0.0085 -0.016,-0.0047 -0.0312,-0.0075 -0.04
