@@ -104,4 +104,5 @@
         android:fillColor="#D7EFFE"/>
     <path
         android:fillColor="#FF000000"
-        android:pathData="M20.3342,15.5457c-0.0019,0.0057 -0.00
+        android:pathData="M20.3342,15.5457c-0.0019,0.0057 -0.0038,0.0104 -0.0066,0.0161 0.0028,-0.0057 0.0047,-0.0104 0.0066,-0.0161z"
+        android:stroke
