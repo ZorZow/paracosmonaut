@@ -116,4 +116,7 @@
         android:strokeAlpha="0.1"
         android:fillAlpha="0.1"/>
     <path
-        android:pathData="M20.3361,15.54c0.0057,-0.018 0.0085,-0.0369 0.0085,-0.0567l0,-0.7041 0,0.7041c0
+        android:pathData="M20.3361,15.54c0.0057,-0.018 0.0085,-0.0369 0.0085,-0.0567l0,-0.7041 0,0.7041c0,0.0198 -0.0028,0.0388 -0.0085,0.0567z"
+        android:fillColor="#D7EFFE"/>
+    <path
+        andro
