@@ -127,4 +127,5 @@
         android:pathData="M6.3998,5.3666m-0.9868,0a0.9868,0.9868 0,1 1,1.9736 0a0.9868,0.9868 0,1 1,-1.9736 0"
         android:fillColor="#33DECB"
         android:fillType="evenOdd"/>
-    <p
+    <path
+        android:pathData="M3.4515,11.9665m-0.5049,0a0.5049,0.5049 0,1 1,1.0097 0a0.5049,0.5049 0,1 1,-1.0
