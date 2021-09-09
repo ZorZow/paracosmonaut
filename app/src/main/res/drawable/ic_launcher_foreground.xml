@@ -124,4 +124,7 @@
         android:strokeAlpha="0.1"
         android:fillAlpha="0.1"/>
     <path
-        android:pathData="M6.3998,5.3666m-0.9868,0a0.9868,0.9868 0,1 1,1.9736 0a0.9868,0.9868 0,1 1,-1.9736 
+        android:pathData="M6.3998,5.3666m-0.9868,0a0.9868,0.9868 0,1 1,1.9736 0a0.9868,0.9868 0,1 1,-1.9736 0"
+        android:fillColor="#33DECB"
+        android:fillType="evenOdd"/>
+    <p
