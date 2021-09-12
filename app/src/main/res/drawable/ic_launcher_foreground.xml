@@ -140,4 +140,5 @@
         android:fillColor="#33DECB"
         android:fillType="evenOdd"/>
     <path
-        android:pat
+        android:pathData="M15.7973,18.4608m-0.9868,0a0.9868,0.9868 0,1 1,1.9737 0a0.9868,0.9868 0,1 1,-1.9737 0"
+ 
