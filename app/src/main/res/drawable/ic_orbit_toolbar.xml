@@ -14,4 +14,5 @@
   ~ limitations under the License.
   -->
 
-<vector android:height="24dp" android:viewportHeig
+<vector android:height="24dp" android:viewportHeight="500"
+    android:viewportWidth="1348" android:width="64.704dp" xmlns:andro
