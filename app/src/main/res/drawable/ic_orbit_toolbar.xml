@@ -15,4 +15,5 @@
   -->
 
 <vector android:height="24dp" android:viewportHeight="500"
-    android:viewportWidth="1348" android:width="64.704dp" xmlns:andro
+    android:viewportWidth="1348" android:width="64.704dp" xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="#33DECB" an
