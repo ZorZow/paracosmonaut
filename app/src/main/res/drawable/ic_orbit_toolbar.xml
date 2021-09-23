@@ -34,4 +34,4 @@
     <path android:fillColor="#33DECB" android:fillType="evenOdd"
         android:pathData="M126.5,299.07m-11,0a11,11 0,1 1,22 0a11,11 0,1 1,-22 0"
         android:strokeColor="#00000000" android:strokeWidth="1"/>
-    <path android:fillColor="#33de84" android:pathData="M572.02,32.17C575.83,3
+    <path android:fillColor="#33de84" android:pathData="M572.02,32.17C575.83,30.18 580.05,32.84 581.14,36.7C578.32,57.28 575.05,77.96 571.99,98.57C623.66,105 671.8,134.75 700.41,178
