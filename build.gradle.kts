@@ -16,4 +16,5 @@
 
 import com.appmattus.markdown.rules.LineLengthRule
 import com.appmattus.markdown.rules.ProperNamesRule
-import com.appmattus.markdown.rules.ProperNam
+import com.appmattus.markdown.rules.ProperNamesRule.Companion.DefaultNames
+import com.github.benmanes.gradle.versions.updates.DependencyUpdatesTa
