@@ -15,3 +15,5 @@
  */
 
 import com.appmattus.markdown.rules.LineLengthRule
+import com.appmattus.markdown.rules.ProperNamesRule
+import com.appmattus.markdown.rules.ProperNam
