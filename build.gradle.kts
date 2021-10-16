@@ -17,4 +17,12 @@
 import com.appmattus.markdown.rules.LineLengthRule
 import com.appmattus.markdown.rules.ProperNamesRule
 import com.appmattus.markdown.rules.ProperNamesRule.Companion.DefaultNames
-import com.github.benmanes.gradle.versions.updates.DependencyUpdatesTa
+import com.github.benmanes.gradle.versions.updates.DependencyUpdatesTask
+
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+    }
+
+    de
