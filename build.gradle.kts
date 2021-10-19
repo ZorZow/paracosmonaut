@@ -34,4 +34,8 @@ buildscript {
 }
 
 plugins {
-    id("com.github.ben-manes.versions") version "0.39.0
+    id("com.github.ben-manes.versions") version "0.39.0"
+    id("com.appmattus.markdown") version "0.6.0"
+}
+
+apply(from = "gradle/scripts/detekt.gradle.
