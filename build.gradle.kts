@@ -38,4 +38,10 @@ plugins {
     id("com.appmattus.markdown") version "0.6.0"
 }
 
-apply(from = "gradle/scripts/detekt.gradle.
+apply(from = "gradle/scripts/detekt.gradle.kts")
+
+tasks.register<Delete>("clean") {
+    delete(rootProject.buildDir)
+}
+
+tasks.withType<Depe
