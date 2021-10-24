@@ -54,4 +54,7 @@ tasks.withType<DependencyUpdatesTask> {
                     "rc",
                     "cr",
                     "m",
-        
+                    "preview",
+                    "b",
+                    "ea"
+                )
