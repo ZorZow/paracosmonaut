@@ -48,4 +48,6 @@ tasks.withType<DependencyUpdatesTask> {
     resolutionStrategy {
         componentSelection {
             all {
-           
+                fun isNonStable(version: String) = listOf(
+                    "alpha",
+                 
