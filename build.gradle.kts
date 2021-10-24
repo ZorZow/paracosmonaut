@@ -50,4 +50,8 @@ tasks.withType<DependencyUpdatesTask> {
             all {
                 fun isNonStable(version: String) = listOf(
                     "alpha",
-                 
+                    "beta",
+                    "rc",
+                    "cr",
+                    "m",
+        
