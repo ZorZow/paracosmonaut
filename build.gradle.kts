@@ -57,4 +57,6 @@ tasks.withType<DependencyUpdatesTask> {
                     "preview",
                     "b",
                     "ea"
-                )
+                ).any { qualifier ->
+                    version.matches(Regex("(?i).*[.-]$qualifier[.\\d-+]*"))
+              
