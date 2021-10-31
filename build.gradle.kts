@@ -64,4 +64,11 @@ tasks.withType<DependencyUpdatesTask> {
                     reject("Release candidate")
                 }
             }
-  
+        }
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCent
