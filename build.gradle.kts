@@ -59,4 +59,5 @@ tasks.withType<DependencyUpdatesTask> {
                     "ea"
                 ).any { qualifier ->
                     version.matches(Regex("(?i).*[.-]$qualifier[.\\d-+]*"))
-              
+                }
+                if (isNonStable(candidate.version) && !isNonStable(currentVersion)) {
