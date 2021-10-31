@@ -61,3 +61,7 @@ tasks.withType<DependencyUpdatesTask> {
                     version.matches(Regex("(?i).*[.-]$qualifier[.\\d-+]*"))
                 }
                 if (isNonStable(candidate.version) && !isNonStable(currentVersion)) {
+                    reject("Release candidate")
+                }
+            }
+  
