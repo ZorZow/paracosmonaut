@@ -71,4 +71,6 @@ tasks.withType<DependencyUpdatesTask> {
 allprojects {
     repositories {
         google()
-        mavenCent
+        mavenCentral()
+        maven { setUrl("https://www.lightstreamer.com/repo/maven") }
+        maven 
