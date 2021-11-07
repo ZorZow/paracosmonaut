@@ -79,4 +79,5 @@ allprojects {
 
 markdownlint {
     rules {
- 
+        +LineLengthRule(codeBlocks = false, tables = false)
+        +ProperNamesRule(na
