@@ -73,4 +73,10 @@ allprojects {
         google()
         mavenCentral()
         maven { setUrl("https://www.lightstreamer.com/repo/maven") }
-        maven 
+        maven { setUrl("https://dl.bintray.com/lisawray/maven") }
+    }
+}
+
+markdownlint {
+    rules {
+ 
