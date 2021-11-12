@@ -80,4 +80,6 @@ allprojects {
 markdownlint {
     rules {
         +LineLengthRule(codeBlocks = false, tables = false)
-        +ProperNamesRule(na
+        +ProperNamesRule(names = DefaultNames + "Orbit")
+    }
+}
